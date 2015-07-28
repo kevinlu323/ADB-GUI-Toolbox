@@ -194,7 +194,6 @@ public class MainWindow {
 		        	break;
 		        case "Pull Aplog":
 		        	commandList.clear();
-		        	//commandList.add("CMD /c start Pull_aplog.bat");
 		        	commandList=new GetCommandList("/ref/Pull_Aplog").getCommandArray();
 		        	needFilter = false;
 		        	break;
@@ -255,7 +254,6 @@ public class MainWindow {
 		        	try {
 						tr.readContents();
 					} catch (IOException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 						jta.append("Something is wrong while reading files");
 					}
